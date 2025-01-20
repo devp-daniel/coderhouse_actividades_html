@@ -6,46 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes</title>
     <link rel="icon" href="../assets/images/icon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
+
     <header>
-        <img src="../assets/images/logo1.jpg" alt="logo1">
+        <img src="../assets/images/logo1.png" alt="logo1" width="92" height="72">
         <nav>
-            <li><a href="index.html">Inicio</a></li>
+            <a href="index.html">Inicio</a>
+            <a href="capitulos.html">Capitulos</a>
+            <a href="autor.html">Autor</a>
+            <a href="musica.html">Música</a>
         </nav>
     </header>
 
-<main>
-    <h1>Personajes</h1>
+    <main>
+        <h1>Personajes</h1>
+        <!--- Formulario de contacto --->
+        <form action="" method="post">
 
-    <!--- Formulario de contacto --->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono">
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais">
+                <option value="mexico">Mexico</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+            </select>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <input type="submit" value="Enviar">   
 
-    <form action="" method="post">
+        </form>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <label for="telefono">Telefono:</label>
-        <input type="tel" name="telefono" id="telefono">
-        <label for="pais">Pais:</label>
-        <select name="pais" id="pais">
-            <option value="mexico">Mexico</option>
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="colombia">Colombia</option>
-            <option value="argentina">Argentina</option>
-        </select>
-        <label for="mensaje">Mensaje:</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
-        <input type="submit" value="Enviar">   
+    </main>
 
-    </form>
-
-</main>
     <footer>
-        <img src="../assets/images/logo2.jpg" alt="logo2">
+        <img src="../assets/images/logo1.png" alt="logo1" width="92" height="72">
         <p>2025 - Footer de prueba</p>
     </footer>
 
