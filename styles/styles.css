@@ -1,5 +1,35 @@
+/* Google Fonts */
+/* font-family: "Roboto", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
-    color: white;
-    font-family: Calibri;
+    background-color: #540b0e;
+    color: #fff3b0;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+/* Barra de navegacion */
+
+.nav-li{
+    list-style: none;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: #fff3b0;
+}
+
+/* Logo */
+
+.brand-logo {
+    width: 92px;
+    height: 72px;
 }
