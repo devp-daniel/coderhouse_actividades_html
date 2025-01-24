@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- Titulo, metadatos, logo y links a archivos externos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitulos</title>
-    <link rel="icon" href="../assets/images/icon.jpg" type="image/jpeg">
+    <link rel="icon" href="../assets/icons/icon.jpg" type="image/jpeg">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -13,23 +14,29 @@
 <body>
     <header>
         <!-- Aca va la barra de navegacion y el logo de la pagina -->
-        <img src="../assets/images/large-image.jpg" alt="large-image" width="768" height="432">
         <nav>
+            <img class="brand-logo" src="../assets/images/logo1.png" alt="logo">
+            <img class="brand-logo" src="../assets/images/ladrillo-text.png" alt="ladrillo-text">
             <ul>
                 <li class="nav-li">
-                    <a class="nav-a" href="index.html">Inicio</a>
+                    <img class="icon" src="../assets/icons/home.png" alt="home">
+                    <a class="nav-class" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="capitulos.html">Capitulos</a>
+                    <img class="icon" src="../assets/icons/video.png" alt="capitulo">
+                    <a class="nav-class" href="./capitulos.html">Capitulos</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="autor.html">Autor</a>
+                    <img class="icon" src="../assets/icons/characters.png" alt="personajes">
+                    <a class="nav-class" href="./personajes.html">Personajes</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="personajes.html">Personajes</a>
+                    <img class="icon" src="../assets/icons/music.png" alt="musica">
+                    <a class="nav-class" href="./musica.html">Música</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="musica.html">Música</a>
+                    <img class="icon" src="../assets/icons/contact-us.png" alt="contacto">
+                    <a class="nav-class" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -38,27 +45,71 @@
     <main>
         <h1>Capitulos</h1>
         <!-- Lista de capitulos -->
+        <!-- Poner el boton de toggle cuando sepa como hacerlo -->
         <section>     
             <ul>
-                <li>Capitulo 1</li>
-                <li>Capitulo 2</li>
-                <li>Capitulo 3</li>
-                <li>Capitulo 4</li>
-                <li>Capitulo 5</li>
-                <li>Capitulo 6</li>
-                <li>Capitulo 7</li>
-                <li>Capitulo 8</li>
-                <li>Capitulo 9</li>
-                <li>Capitulo 10</li>
-                <li>Capitulo 11</li>
-                <li>Capitulo 12</li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap1.png" alt="cap1">
+                    <br>E1 - Así es como surge el amor y tal
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap2.png" alt="cap2">
+                    <br>E2 - Eso es un extraterrestre, ¿no?
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap3.png" alt="cap3">
+                    <br>E3 - Batalla entre abuelas y eso
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap4.png" alt="cap4">
+                    <br>E4 - Palizón a la Turboabuela
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap5.png" alt="cap5">
+                    <br>E5 - ¿Dónde andarán las pelotas?
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap6.png" alt="cap6">
+                    <br>E6 - Esa tía tiene tela
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap7.png" alt="cap7">
+                    <br>E7 - Hacia un mundo mejor
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap8.png" alt="cap8">
+                    <br>E8 - Hay algo que me tiene rayada
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap9.png" alt="cap9">
+                    <br>E9 - ¡Fusión! ¡El serpodemonio de Dover Nessie!
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap10.png" alt="cap10">
+                    <br>E10 - ¿Has visto la mutilación de ganado?
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap11.png" alt="cap11">
+                    <br>E11 - Primer amor
+                </li>
+                <li class="capitulo">
+                    <img class="cap-cover" src="../assets/capitulo_cover/cap12.png" alt="cap12">
+                    <br>E12 - De escapada a la casa encantada
+                </li>
             </ul>
         </section> 
     </main>
 
     <footer>
-        <img src="../assets/images/logo1.png" alt="logo1" width="92" height="72">
-        <p>2025 - Footer de prueba</p>
+        <!-- Pie de pagina, va el texto de copyrigth, metodo de contacto o algo similar -->
+         <ul>
+            <li><a href="https://facebook.com" target="_blank"><img class="icon" src="../assets/icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img class="icon" src="../assets/icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img class="icon" src="../assets/icons/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://tiktok.com" target="_blank"><img class="icon" src="../assets/icons/tik-tok.png" alt="tik-tok"></a></li>
+            <li><a href="https://web.telegram.org" target="_blank"><img class="icon" src="../assets/icons/telegram.png" alt="telegram"></a></li>
+         </ul>
+         <p>Copyright © 2025 - All rights reserved.</p>
     </footer>
        
 </body>

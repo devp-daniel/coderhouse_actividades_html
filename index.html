@@ -8,7 +8,7 @@
     <title>Dan Da Dan</title>
     <link rel="icon" href="./assets/icons/icon.jpg" type="image/jpeg">
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
@@ -24,19 +24,19 @@
                 </li>
                 <li class="nav-li">
                     <img class="icon" src="./assets/icons/video.png" alt="capitulo">
-                    <a class="nav-class" href="capitulos.html">Capitulos</a>
+                    <a class="nav-class" href="./pages/capitulos.html">Capitulos</a>
                 </li>
                 <li class="nav-li">
                     <img class="icon" src="./assets/icons/characters.png" alt="personajes">
-                    <a class="nav-class" href="personajes.html">Personajes</a>
+                    <a class="nav-class" href="./pages/personajes.html">Personajes</a>
                 </li>
                 <li class="nav-li">
                     <img class="icon" src="./assets/icons/music.png" alt="musica">
-                    <a class="nav-class" href="musica.html">Música</a>
+                    <a class="nav-class" href="./pages/musica.html">Música</a>
                 </li>
                 <li class="nav-li">
                     <img class="icon" src="./assets/icons/contact-us.png" alt="contacto">
-                    <a class="nav-class" href="contacto.html">Contacto</a>
+                    <a class="nav-class" href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -45,20 +45,38 @@
     <main>
         <!-- Aca va todo el contenido central de su web -->
         <h1>16+ - Acción, Drama, Romance, Shounen, Sobrenatural</h1>
-        <img src="./assets/icons/review-star.png" alt="review-star">
+        <img class="large-image" src="./assets/images/large-image.jpg" alt="portada de la serie">
+        <img class="review-star" src="./assets/icons/review-star.png" alt="review-star">
         <section>
             <article>
-                <p>Dan Da Dan es una serie de manga y anime que cuenta la historia de Momo Ayase y Okarun, dos estudiantes de secundaria que tienen creencias opuestas sobre los fantasmas y los extraterrestres. La serie se caracteriza por su mezcla de géneros, como la comedia romántica, la ciencia ficción y el terror.</p>
+                <!-- Sinopsis de la serie -->
+                <div>
+                    <h2>Momo Ayase es una estudiante de secundaria que cree en los fantasmas, mientras que su compañero de clase Okarun es un fanático de los extraterrestres.</h2>
+                    <p>Para comprobar quién está en lo cierto, Momo y Okarun visitan lugares relacionados con lo sobrenatural, como un hospital abandonado y un túnel embrujado. En estos lugares, se enfrentan a amenazas paranormales y descubren que tienen superpoderes.</p>
+                </div>
+                <!-- Autor -->
+                 <div>
+                    <h3>Autor:</h3>
+                    <h4>Yukinobu Tatsu</h4>
+                    <img class="autor" src="./assets/images/autor.jpg" alt="autor">
+                 </div>
+                 <!-- Trailer -->
+                  <h5>Trailer</h5>
+                  <video src="./assets/video/trailer.mp4" controls></video>
             </article>
         </section>
-        </article>
     </main>
 
     <footer>
         <!-- Pie de pagina, va el texto de copyrigth, metodo de contacto o algo similar -->
-        <p>2025 - Footer de prueba</p>
-        <p>Facebook, Instagram, X, TikTok</p>
-        <img src="../assets/images/logo1.png" alt="logo1" width="92" height="72">
+         <ul>
+            <li><a href="https://facebook.com" target="_blank"><img class="icon" src="./assets/icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img class="icon" src="./assets/icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img class="icon" src="./assets/icons/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://tiktok.com" target="_blank"><img class="icon" src="./assets/icons/tik-tok.png" alt="tik-tok"></a></li>
+            <li><a href="https://web.telegram.org" target="_blank"><img class="icon" src="./assets/icons/telegram.png" alt="telegram"></a></li>
+         </ul>
+         <p>Copyright © 2025 - All rights reserved.</p>
     </footer>
 
 </body>

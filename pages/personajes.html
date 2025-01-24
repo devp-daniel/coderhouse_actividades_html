@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- Titulo, metadatos, logo y links a archivos externos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personajes</title>
-    <link rel="icon" href="../assets/images/icon.jpg" type="image/jpeg">
+    <title>Capitulos</title>
+    <link rel="icon" href="../assets/icons/icon.jpg" type="image/jpeg">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -13,23 +14,29 @@
 <body>
     <header>
         <!-- Aca va la barra de navegacion y el logo de la pagina -->
-        <img src="../assets/images/large-image.jpg" alt="large-image" width="768" height="432">
         <nav>
+            <img class="brand-logo" src="../assets/images/logo1.png" alt="logo">
+            <img class="brand-logo" src="../assets/images/ladrillo-text.png" alt="ladrillo-text">
             <ul>
                 <li class="nav-li">
-                    <a class="nav-a" href="index.html">Inicio</a>
+                    <img class="icon" src="../assets/icons/home.png" alt="home">
+                    <a class="nav-class" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="capitulos.html">Capitulos</a>
+                    <img class="icon" src="../assets/icons/video.png" alt="capitulo">
+                    <a class="nav-class" href="./capitulos.html">Capitulos</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="autor.html">Autor</a>
+                    <img class="icon" src="../assets/icons/characters.png" alt="personajes">
+                    <a class="nav-class" href="./personajes.html">Personajes</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="personajes.html">Personajes</a>
+                    <img class="icon" src="../assets/icons/music.png" alt="musica">
+                    <a class="nav-class" href="./musica.html">Música</a>
                 </li>
                 <li class="nav-li">
-                    <a class="nav-a" href="musica.html">Música</a>
+                    <img class="icon" src="../assets/icons/contact-us.png" alt="contacto">
+                    <a class="nav-class" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -37,32 +44,24 @@
 
     <main>
         <h1>Personajes</h1>
-        <!--- Formulario de contacto --->
-        <form action="" method="post">
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono" id="telefono">
-            <label for="pais">Pais:</label>
-            <select name="pais" id="pais">
-                <option value="mexico">Mexico</option>
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <option value="colombia">Colombia</option>
-                <option value="argentina">Argentina</option>
-            </select>
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-            <input type="submit" value="Enviar">   
-        </form>
+        <!-- Carrusel de images -->
+        <!-- cuando sepa como hacerlo -->
+         <section>
+            <img src="../assets/images/momo.jpg" alt="momo">
+            <br><p>Momo Ayase</p>
+         </section>
     </main>
 
     <footer>
-        <p>2025 - Footer de prueba</p>
-        <img src="../assets/images/logo1.png" alt="logo1" width="92" height="72">
+        <!-- Pie de pagina, va el texto de copyrigth, metodo de contacto o algo similar -->
+         <ul>
+            <li><a href="https://facebook.com" target="_blank"><img class="icon" src="../assets/icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img class="icon" src="../assets/icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img class="icon" src="../assets/icons/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://tiktok.com" target="_blank"><img class="icon" src="../assets/icons/tik-tok.png" alt="tik-tok"></a></li>
+            <li><a href="https://web.telegram.org" target="_blank"><img class="icon" src="../assets/icons/telegram.png" alt="telegram"></a></li>
+         </ul>
+         <p>Copyright © 2025 - All rights reserved.</p>
     </footer>
 
 </body>
