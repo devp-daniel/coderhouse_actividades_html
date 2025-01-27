@@ -45,32 +45,23 @@ nav {
 /* Main */
 
 h1 {
+    color: #E09F3E;
+    font-size: 40px;
+}
+
+.title {
     color: #FFF3B0;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
 }
 
-.large-image {
-    width: 1057px;
-    height: 666px;
-}
-
-.review-star {
-    width: 253px;
-    height: 42px;
-}
-
-/* Sinopsis de la serie */
-
-h2, p {
+.sinopsis {
     color: #E09F3E;
     font-size: 28px;
     font-weight: lighter;
     text-align: start;
 }
-
-/* Autor */
 
 h3 {
     color: #E09F3E;
@@ -85,18 +76,76 @@ h4 {
     text-align: center;
 }
 
+/* Modificar la forma de la imagen a un circulo cuando se pueda */
 .autor {
     width: 319px;
     height: 319px;
 }
 
-/* Trailer */
-
-h5 {
+.ita-32 {
     color: #FFF3B0;
     font-size: 32px;
     font-style: italic;
     font-weight: lighter;
+}
+
+/* Imagen de portada Home*/
+
+.large-image {
+    width: 1057px;
+    height: 666px;
+}
+
+.review-star {
+    width: 253px;
+    height: 42px;
+}
+
+/* Capitulos */
+
+.capitulo {
+    color: #FFF3B0;
+    font-size: 20px;
+}
+
+.cap-cover {
+    width: 332px;
+    height: 188px;
+}
+
+.boton {
+    width: 51px;
+    height: 28px;
+}
+
+.ita-40 {
+    color: #FFF3B0;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.band {
+    color: #E09F3E;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+/* Video musical */
+.music-video {
+    width: 560px;
+    height: 315px;
+}
+
+.ita-24 {
+    color: #FFF3B0;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/* Color del fondo del form */
+
+.form-back{
+    background-color: #9E2A2B;
 }
 
 /* Footer */
@@ -113,14 +162,3 @@ footer p {
     text-align: center;
 }
 
-/* Capitulos */
-
-.capitulo {
-    color: #FFF3B0;
-    font-size: 20px;
-}
-
-.cap-cover {
-    width: 332px;
-    height: 188px;
-}
