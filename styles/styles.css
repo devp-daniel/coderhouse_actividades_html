@@ -33,6 +33,14 @@ body {
 .icon{
     width: 50px;
     height: auto;
+    padding: 8%;
+    gap: 5px;
+}
+
+a.nav-link {
+    color: #E09F3E;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Main */
@@ -120,7 +128,8 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    padding: 2%;
 }
 
 .capitulo {
@@ -174,6 +183,16 @@ ul {
         height: auto;
     }
 
+    ul.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        gap: 2px;
+    }
+
     .review-star {
         width: 40%;
         height: auto;
@@ -217,6 +236,7 @@ ul {
         grid-template-columns: 1fr;
         justify-content: space-around;
         align-items: center;
+        padding: 3%;
     }
 
     .capitulo {
@@ -225,5 +245,73 @@ ul {
 }
 
 @media (min-width: 451px) and (max-width: 768px) {
+    .brand-logo {
+        width: 110px;
+        height: auto;
+    }
 
+    .icon {
+        width: 35px;
+        height: auto;
+    }
+
+    ul.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        gap: 2px;
+    }
+
+    .review-star {
+        width: 40%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+
+    .sinopsis {
+        font-size: 19px;
+    }
+
+    .autor {
+        width: 95%;
+        height: auto;
+    }
+
+    .reg-36 {
+        font-size: 19px;
+    }
+
+    .ita-36 {
+        font-size: 19px;
+    }
+
+    .ita-32 {
+        font-size: 19px;
+    }
+
+    footer {
+        font-size: 19px;
+    }
+
+    .reg-40 {
+        font-size: 19px;
+    }
+
+    .grid-capitulos {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .capitulo {
+        font-size: 19px;
+    }
 }
