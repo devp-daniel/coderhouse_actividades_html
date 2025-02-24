@@ -220,6 +220,43 @@ img.d-block.w-100 {
     padding: 2%;
 }
 
+.textbox {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 2%;
+    background-color: #FFF3B0;
+    font-size: 20px;
+}
+
+.textarea {
+    width: 80%;
+    height: 240px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 2%;
+    background-color: #FFF3B0;
+    font-size: 20px;
+}
+
+.send-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #E09F3E;
+    color: #FFF3B0;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.send-button:hover {
+    background-color: #FFF3B0;
+    color: #E09F3E;
+}
+
 /* Footer */
 
 footer {
@@ -336,6 +373,20 @@ ul {
         width: 80vw;
         height: 20vh;
     }
+
+    .textbox {
+        font-size: 13px;
+    }
+
+    .textarea {
+        font-size: 13px;
+    }
+
+    .send-button {
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 451px) and (max-width: 768px) {
@@ -432,5 +483,19 @@ ul {
     .music-youtube {
         width: 80vw;
         height: 30vh;
+    }
+
+    .textbox {
+        font-size: 19px;
+    }
+
+    .textarea {
+        font-size: 19px;
+    }
+
+    .send-button {
+        width: 100px;
+        height: 40px;
+        font-size: 19px;
     }
 }
