@@ -1,0 +1,25 @@
+.background-nav {
+    background-image: url(../assets/images/nav-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.brand-logo {
+    width: 200px;
+    height: auto;
+}
+
+.icon{
+    width: 55px;
+    height: auto;
+    padding: 8%;
+    gap: 5px;
+}
+
+a.nav-link {
+    color: #E09F3E;
+    font-size: 16px;
+    font-weight: bold;
+}

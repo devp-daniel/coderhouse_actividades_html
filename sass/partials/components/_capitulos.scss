@@ -1,0 +1,38 @@
+.reg-40 {
+    font-size: 40px;
+    color: #E09F3E;
+}
+
+.grid-capitulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2%;
+}
+
+.capitulo {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFF3B0;
+}
+
+.cap-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    border: 1px solid #000000;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.cap-cover:hover {
+    background-color: #E09F3E;
+}
+
+.boton {
+    width: 51px;
+    height: auto;
+    cursor: pointer;
+}

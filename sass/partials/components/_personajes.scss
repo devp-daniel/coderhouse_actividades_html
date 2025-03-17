@@ -1,0 +1,27 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+img.d-block.w-100 {
+    border-radius: 2%;
+    box-shadow: 0px 5px 10px #000000;
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    width: auto;
+    height: 32px;
+}
+
+.carousel-caption h5 {
+    color: #E09F3E;
+}
+
+.carousel-caption p {
+    color: #FFF3B0;
+    font-style: italic;
+}
