@@ -59,11 +59,13 @@ main {
 }
 
 .large-image {
-    width: 100%;
-    height: auto;
-    justify-content: center;
+    width: 60%; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 20px auto; /* Agrega márgenes alrededor de la imagen */
+    display: block; /* Centra la imagen horizontalmente */
     border-radius: 3%;
     border: 2px solid #000000;
+    box-shadow: 0px 15px 25px #000000;
 }
 
 .review-star {
@@ -85,8 +87,13 @@ main {
 }
 
 .autor {
-    border-radius: 40%;
-    border: 1px solid black;
+    width: 150px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 2px solid #000000; /* Agrega un borde */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 20px auto; /* Agrega márgenes alrededor de la imagen */
 }
 
 figure {
@@ -140,7 +147,7 @@ figure img.autor {
 }
 
 .video {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 3%;
     justify-content: center;
@@ -343,6 +350,10 @@ ul {
         font-size: 13px;
     }
 
+    .large-image {
+        width: 80%;
+    }
+
     .sinopsis {
         font-size: 12px;
     }
@@ -452,6 +463,10 @@ ul {
 
     .title {
         font-size: 21px;
+    }
+
+    .large-image {
+        width: 100%;
     }
 
     .sinopsis {
