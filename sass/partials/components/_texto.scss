@@ -64,43 +64,45 @@ h4 {
     margin: 2% 0;
 }
 
-.reg-20 {
-    color: #E09F3E;
-}
+// Formulario de contacto
 
-.reg-36 {
-    font-size: 36px;
-    color: #E09F3E;
+.form{
+    @include flex-center();
+    @include medidas(50%, auto);
+    flex-direction: column;
     text-align: center;
-}
+    gap: 16px;
+    margin: 2% auto;
+    padding: 2%;
+    border: $border-dark;
+    border-radius: 20px;
+    background-color: $primario;
+    color: $secundario;
+    box-shadow: 0 0 10px $secundario;
 
-.ita-24 {
-    font-size: 24px;
-    font-style: italic;
-    color: #FFF3B0;
-}
+    img {
+        @include medidas(50%, auto);
+        border: $border-dark;
+        border-radius: 20%;
+    }
 
-.ita-36 {
-    font-size: 36px;
-    font-style: italic;
-    color: #FFF3B0;
-    text-align: center;
-}
+    
+    input, textarea, button {
+        @include fontStyle(18px, normal, italic);
+        @include medidas(100%, none);
+        margin: 8px 0;
+        padding: 12px;
+        border-radius: 5px;
+        border: $border-dark;
+    }
 
-.ita-32 {
-    color: #FFF3B0;
-    font-size: 32px;
-    font-style: italic;
-}
-
-.ita-40 {
-    color: #FFF3B0;
-    font-size: 40px;
-    font-style: italic;
-}
-
-.lig-40 {
-    color: #E09F3E;
-    font-size: 40px;
-    font-weight: lighter;
+    .send-button {
+        @include transform();
+        background-color: $secundario; 
+        color: $primario;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($secundario, 10%);
+        }
+    }
 }
