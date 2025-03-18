@@ -1,13 +1,47 @@
-@mixin back
+// Flex
 
-@mixin flex ($direction, $justify, $align) {
+@mixin flex-center () {
   display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
+  justify-content: center;
+  align-items: center;
 }
+
+// Block
+
+@mixin block-center () {
+  display: block;
+  text-align: center;
+}
+
+// Medidas
 
 @mixin medidas ($width, $height) {
   width: $width;
   height: $height;
+}
+
+// Iconos
+
+@mixin icon ($width, $height, $padding, $gap) {
+  @include medidas($width, $height);
+  padding: $padding;
+  gap: $gap;
+}
+
+// Letra
+
+@mixin fontStyle ($size, $weight, $style) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// Transfomaciones
+
+@mixin transform () {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

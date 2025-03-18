@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+    margin: 1% 0;
+}
+
+section {
+    margin: 1%;
+}
+
+// Index
+
+.title {
+    @include fontStyle(36px, lighter, italic);
+    color: $secundario;
+    text-align: start;
+    margin-left: 1%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.sinopsis {
+    @include fontStyle(28px, lighter, normal);
+    color: $terciario;   
+    p {
+        color: $secundario;
+    }
+}
+
+// Por algun motivo body esta sobrescribiendo a h3 y p entonces toco agregarlos en la clase .auto para que aplique el estilo :(
+
+.autor {
+    figure {
+        @include flex-center();
+    }
+    
+    img {
+        @include block-center();
+        @include medidas(80%, auto);
+        border: $border-dark;
+        border-radius: 20%;
+    }
+
+    h3 {
+        @include fontStyle(36px, normal, normal);
+        text-align: center;
+    }
+    
+    p {
+        @include fontStyle(36px, normal, italic);
+        color: $secundario;
+        text-align: center;
+    }
+}
+
+h4 {
+    @include fontStyle(32px, normal, italic);
+    color: $secundario;
+    margin: 2% 0;
+}
+
+.reg-20 {
+    color: #E09F3E;
+}
+
+.reg-36 {
+    font-size: 36px;
+    color: #E09F3E;
+    text-align: center;
+}
+
+.ita-24 {
+    font-size: 24px;
+    font-style: italic;
+    color: #FFF3B0;
+}
+
+.ita-36 {
+    font-size: 36px;
+    font-style: italic;
+    color: #FFF3B0;
+    text-align: center;
+}
+
+.ita-32 {
+    color: #FFF3B0;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.ita-40 {
+    color: #FFF3B0;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.lig-40 {
+    color: #E09F3E;
+    font-size: 40px;
+    font-weight: lighter;
+}

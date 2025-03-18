@@ -87,13 +87,13 @@ main {
 }
 
 .autor {
-    width: 150px; /* Ajusta este valor según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    border: 2px solid #000000; /* Agrega un borde */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
-    display: block; /* Centra la imagen horizontalmente */
-    margin: 20px auto; /* Agrega márgenes alrededor de la imagen */
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    display: block; 
+    margin: 20px auto;
 }
 
 figure {

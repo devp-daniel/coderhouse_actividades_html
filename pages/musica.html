@@ -2,23 +2,26 @@
 <html lang="en">
 
 <head>
-    <!-- Titulo, metadatos, logo y links a archivos externos -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musica</title>
-    <link rel="icon" href="../assets/icons/icon.jpg" type="image/jpeg">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Titulo, metadatos, logo y links a archivos externos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <!-- Icon -->
+  <link rel="icon" href="../assets/icons/icon.jpg" type="image/jpeg">
+  <title>Dan Da Dan</title>
 </head>
 
 <body>
     <header>
         <!-- Barra de navegación y logo de la pagina -->
-        <nav class="navbar navbar-expand-lg navbar-dark background-nav nav-edit">
+        <nav class="navbar navbar-expand-lg navbar-dark background-nav mi-navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="brand-logo" src="../assets/images/logo1.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +30,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="../index.html"><img class="icon" src="../assets/icons/home.png" alt="Inicio">Inicio</a>
+                  <a class="nav-link" href="../index.html"><img class="nav-icon" src="../assets/icons/home.png" alt="Inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/capitulos.html"><img class="icon" src="../assets/icons/video.png" alt="Capitulos">Capitulos</a>
+                    <a class="nav-link" href="../pages/capitulos.html"><img class="nav-icon" src="../assets/icons/video.png" alt="Capitulos">Capitulos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/personajes.html"><img class="icon" src="../assets/icons/characters.png" alt="Personajes">Personajes</a>
+                    <a class="nav-link" href="../pages/personajes.html"><img class="nav-icon" src="../assets/icons/characters.png" alt="Personajes">Personajes</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./musica.html"><img class="icon" src="../assets/icons/music.png" alt="Musica">Musica</a>
+                    <a class="nav-link active" aria-current="page" href="./musica.html"><img class="nav-icon" src="../assets/icons/music.png" alt="Musica">Musica</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../pages/contacto.html"><img class="icon" src="../assets/icons/contact-us.png" alt="Contacto">Contacto</a>
+                  <a class="nav-link" href="../pages/contacto.html"><img class="nav-icon" src="../assets/icons/contact-us.png" alt="Contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -48,41 +51,126 @@
       </header>
 
     <main>
-        <h1 class="reg-40">Música</h1>
+        <h1>Música</h1>
         <!-- Videos músicales de YouTube -->
          <!-- Update: Algunos videos de Youtube no se mostraban entonces me toco descargarlos :( -->
          <section class="music-grid">
-            <article>
+          <article>
                 <div>
+                    <h2>Intro</h2>
                     <video class="music-video" src="../assets/video/otonoke.mp4" controls></video>
-                    <p class="lig-40">Otonoke</p>
-                    <p class="ita-40">Creepy Nuts</p>
+                    <p>Otonoke</p>
+                    <h3>Creepy Nuts</h3>
                 </div>
+                <div id="carouselExampleIndicators1" class="carousel slide">
+                  <h4>Te gusta lo que escuchas? Prueba estas otras canciones de Creepy Nuts!</h4>
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/4LhDEsC2tzaVuZbWAaCLrP?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/22pJeRZ0Mex0B85PQD4mUD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/5HPsZwo40KA3GThqBFZFac?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </article>
+              <article>
                 <div>
+                    <h2>Ending</h2>
                     <video class="music-video" src="../assets/video/tadaida.mp4" controls></video>
-                    <p class="lig-40">Tadaida</p>
-                    <p class="ita-40">Zutomayo</p>
+                    <p>Tadaida</p>
+                    <h3>Zutomayo</h3>
                 </div>
-                <div>
-                    <iframe class="music-youtube" width="560" height="315" src="https://www.youtube.com/embed/2cqkvrrqw9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="lig-40">To a kinder world</p>
-                    <p class="ita-40">Kensuke Ushio</p>
+                <div id="carouselExampleIndicators2" class="carousel slide">
+                  <h4>Te gusta lo que escuchas? Prueba estas otras canciones de Zutomayo!</h4>
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/3fPilEQed9XCVEMHqvXsmg?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/4HgsPAX3MmMgIT60hJ4W4U?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                      <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/2fJbss5uUmmBqn7qFkmyWj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
+              </article>
+              <article>
+                  <div id="carouselExampleIndicators3" class="carousel slide">
+                    <h2>Otras canciones de la serie que te pueden gustar...</h2>
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/1W2B1mTHfs18kxuTqSGjtI?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                      </div>
+                      <div class="carousel-item">
+                        <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/3cRTyPd1x4ORo7f9UpQqbc?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                      </div>
+                      <div class="carousel-item">
+                        <iframe class="spotify-edit" style="border-radius:12px" src="https://open.spotify.com/embed/track/5v77Y6Haff2eAVc0zM56AD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </article>
-         </section>
+          </section>
     </main>
 
     <footer>
         <!-- Pie de pagina, va el texto de copyrigth, metodo de contacto o algo similar -->
          <ul>
-            <li><a href="https://facebook.com" target="_blank"><img class="icon" src="../assets/icons/facebook.png" alt="facebook"></a></li>
-            <li><a href="https://instagram.com" target="_blank"><img class="icon" src="../assets/icons/instagram.png" alt="instagram"></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img class="icon" src="../assets/icons/twitter.png" alt="twitter"></a></li>
-            <li><a href="https://tiktok.com" target="_blank"><img class="icon" src="../assets/icons/tik-tok.png" alt="tik-tok"></a></li>
-            <li><a href="https://web.telegram.org" target="_blank"><img class="icon" src="../assets/icons/telegram.png" alt="telegram"></a></li>
+            <li><a href="https://facebook.com" target="_blank"><img class="footer-icon" src="../assets/icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img class="footer-icon" src="../assets/icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img class="footer-icon" src="../assets/icons/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://tiktok.com" target="_blank"><img class="footer-icon" src="../assets/icons/tik-tok.png" alt="tik-tok"></a></li>
+            <li><a href="https://web.telegram.org" target="_blank"><img class="footer-icon" src="../assets/icons/telegram.png" alt="telegram"></a></li>
          </ul>
          <p>Copyright © 2025 - All rights reserved.</p>
     </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

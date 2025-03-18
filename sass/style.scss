@@ -3,7 +3,15 @@
 @import 'partials/base/tipografia';
 
 // Utilities
-
-
+@import 'partials/utilities/variables';
+@import 'partials/utilities/maps';
+@import 'partials/utilities/mixins';
 
 // Components
+@import 'partials/components/body';
+@import 'partials/components/navbar';
+@import 'partials/components/imagenes';
+@import 'partials/components/texto';
+@import 'partials/components/video';
+@import 'partials/components/footer';
+@import 'partials/components/mediaq';

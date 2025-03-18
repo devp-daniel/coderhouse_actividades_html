@@ -1,0 +1,92 @@
+// Iconos
+
+.nav-icon{
+    @include icon(50px, auto, 8%, 5px);
+}
+
+.footer-icon{
+    @include icon(38px, auto, 8%, 5px);
+}
+
+// Index
+
+.large-image {
+    @include medidas(100%, auto);
+    border: $border-dark;
+    box-shadow: $shadow;
+}
+
+.review-star {
+    margin: 2% 1%;
+}
+
+// Capitulos
+
+.capitulos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2%;
+
+    .capitulo {
+        display: flex;
+        flex-direction: column;
+        @include fontStyle(20px, normal, normal);
+        color: $secundario;
+    }
+
+    img {
+        @include medidas(100%, auto);
+        border: $border-dark;
+        box-shadow: $shadow;
+        border-radius: 2%;
+        cursor: pointer;
+    }
+
+    .boton {
+        @include medidas(18%, auto);
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        margin: 1% 0;
+    }    
+}
+
+// Personajes - Carrusel de imagenes
+
+.carousel-container {
+    @include flex-center();
+    
+    img.d-block.w-100 {
+        @include medidas(100%, auto);
+        box-shadow: $shadow;
+    }
+    
+    .arrow {
+        @include medidas(auto, 32px);
+    }
+
+    .carousel-caption {
+        top: 1%;
+        left: 1%;
+
+        h5 {
+            color: $primario;
+        }
+        
+        p {
+            color: $secundario;
+            font-style: italic;
+        }
+    }
+
+    .breve-descripcion {
+        @include fontStyle(20px, normal, italic);
+        color: $secundario;
+        background: $background-descripcion;
+        margin: 0 0 2.5em 0;
+        padding: 1em;
+    }
+}

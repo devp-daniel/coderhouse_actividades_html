@@ -1,25 +1,21 @@
-.background-nav {
+.mi-navbar {
     background-image: url(../assets/images/nav-img.png);
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
     background-repeat: no-repeat;
     background-color: black;
 }
 
 .brand-logo {
-    width: 200px;
-    height: auto;
+    @include medidas(180px, auto);
 }
 
-.icon{
-    width: 55px;
-    height: auto;
-    padding: 8%;
-    gap: 5px;
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0.95;
 }
 
 a.nav-link {
-    color: #E09F3E;
-    font-size: 16px;
-    font-weight: bold;
+    color: $primario;
+    @include fontStyle(24px, bold, normal);
 }

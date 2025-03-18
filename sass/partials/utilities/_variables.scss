@@ -1,0 +1,19 @@
+//Font family
+
+$font-family: 'Prompt', sans-serif;
+
+// Colores
+
+$background: linear-gradient(to bottom, #190A05, #870000);
+$primario: #E09F3E;
+$secundario: #FFF3B0;
+$terciario: yellow;
+$dark-color: #000000;
+$background-descripcion: linear-gradient(to top, #870000, #1a636c);
+$footer-color: linear-gradient(to top, #e52d27, #b31217);
+
+// Sombras y bordes
+
+$border-dark: 2px solid $dark-color;
+$border-primario: 2px solid $primario;
+$shadow: 0px 15px 25px #000000;

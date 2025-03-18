@@ -1,8 +1,5 @@
 body {
-    font-family: 'Prompt', sans-serif;
-    background-image: url(../assets/images/back-img.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: $font-family;
+    background: $background;
+    color: $primario;
 }

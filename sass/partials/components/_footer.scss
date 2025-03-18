@@ -1,17 +1,15 @@
 footer {
-    background-color: #9E2A2B;
-    color: #E09F3E;
+    background: $footer-color;
     font-size: 24px;
     text-align: center;
     padding: 1%;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    list-style: none;
-    text-decoration: none;
+    margin-top: 2em;
+    
+    ul {
+        @include flex-center ();
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+        gap: 24px;
+    }
 }

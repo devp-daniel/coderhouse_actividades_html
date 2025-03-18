@@ -1,0 +1,57 @@
+// Trailer
+
+.video {
+    @include block-center;
+    @include medidas(85%, auto);
+    border-radius: 3%;
+    justify-content: center;
+    border: $border-primario;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// Musica
+
+.music-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    @include medidas(90vw, auto);
+    gap: 36px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        @include fontStyle(34px, normal, normal);
+        color: $secundario;   
+    }
+
+    p {
+        @include fontStyle(30px, normal, italic);
+        color: $primario;
+    }
+
+    h3 {
+        @include fontStyle(30px, normal, normal);
+        color: $terciario;
+    }
+
+    h4 {
+        @extend p;
+        font-size: 22px;
+    }
+
+    .music-video {
+        @include medidas(100%, 352px);
+        @include transform();
+        border-radius: 3%;
+        border: $border-primario;
+        box-shadow: $shadow;
+        margin-bottom: 1.5em;
+    }
+
+    .spotify-edit {
+        @include transform();
+      }
+}
