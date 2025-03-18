@@ -11,5 +11,6 @@ footer {
         list-style: none;
         text-decoration: none;
         gap: 24px;
+        @include transform ();
     }
 }

@@ -10,6 +10,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- CSS Styles -->
   <link rel="stylesheet" href="../styles/style.css">
 
@@ -57,11 +63,14 @@
          <section class="music-grid">
           <article>
                 <div>
+                  <div data-aos="fade-right">
                     <h2>Intro</h2>
                     <video class="music-video" src="../assets/video/otonoke.mp4" controls></video>
                     <p>Otonoke</p>
                     <h3>Creepy Nuts</h3>
+                  </div>
                 </div>
+                <div data-aos="fade-right">
                 <div id="carouselExampleIndicators1" class="carousel slide">
                   <h4>Te gusta lo que escuchas? Prueba estas otras canciones de Creepy Nuts!</h4>
                   <div class="carousel-indicators">
@@ -89,14 +98,18 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+              </div>
               </article>
               <article>
                 <div>
+                  <div data-aos="fade-left">
                     <h2>Ending</h2>
                     <video class="music-video" src="../assets/video/tadaida.mp4" controls></video>
                     <p>Tadaida</p>
                     <h3>Zutomayo</h3>
+                  </div>
                 </div>
+                <div data-aos="fade-left">
                 <div id="carouselExampleIndicators2" class="carousel slide">
                   <h4>Te gusta lo que escuchas? Prueba estas otras canciones de Zutomayo!</h4>
                   <div class="carousel-indicators">
@@ -124,8 +137,10 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+              </div>
               </article>
               <article>
+                <div data-aos="fade-right">
                   <div id="carouselExampleIndicators3" class="carousel slide">
                     <h2>Otras canciones de la serie que te pueden gustar...</h2>
                     <div class="carousel-indicators">
@@ -153,6 +168,7 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+                </div>
             </article>
           </section>
     </main>
@@ -171,6 +187,12 @@
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

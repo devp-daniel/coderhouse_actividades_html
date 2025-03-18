@@ -10,6 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -52,7 +58,7 @@
 
     <main>
         <!-- Aca va todo el contenido central de su web -->
-        <img class="large-image" src="./assets/images/large-image.jpg" alt="portada de la serie">
+        <img class="large-image animate__animated animate__fadeInUp" src="./assets/images/large-image.jpg" alt="portada de la serie">
         <img class="review-star" src="./assets/icons/review-star.png" alt="estrellas de review">
         <h1 class="title">16+ - Acción, Drama, Romance, Shounen, Sobrenatural</h1>
         <section>
@@ -63,10 +69,12 @@
                     <p>Momo Ayase es una estudiante de secundaria que cree en los fantasmas, mientras que su compañero de clase Okarun es un fanático de los extraterrestres. Para comprobar quién está en lo cierto, Momo y Okarun visitan lugares relacionados con lo sobrenatural, como un hospital abandonado y un túnel embrujado. En estos lugares, se enfrentan a amenazas paranormales y descubren que tienen superpoderes.</p>
                 </div>
                 <!-- Autor -->
+                <div data-aos="flip-right">
                 <div class="autor">
                   <figure><img src="./assets/images/autor.jpg" alt="autor"></figure>
                   <h3>Autor:</h3>
                   <p>Yukinobu Tatsu</p>
+                </div>
                 </div>
             </article>
             <article>
@@ -91,6 +99,12 @@
 
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

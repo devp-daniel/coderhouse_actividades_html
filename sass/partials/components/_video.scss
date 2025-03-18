@@ -9,6 +9,7 @@
     box-shadow: $shadow;
     margin: 0 auto;
     text-align: center;
+    @include transform();
 }
 
 // Musica
