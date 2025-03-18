@@ -1,5 +1,20 @@
 // Media Queries
 
+@media (min-width: 769px) and (max-width: 991px){
+    // Navbar
+    .brand-logo {
+        @include medidas(110px, auto);
+    }
+    
+    .icon {
+        @include medidas(40px, auto);
+    }
+    
+    ul.navbar-nav {
+        @include flex-center();
+    }
+}
+
 @media (min-width: 451px) and (max-width: 768px) {
     // Navbar
     .brand-logo {
@@ -14,179 +29,79 @@
         @include flex-center();
     }
 
+    // Index
+
     .review-star {
         @include medidas(25%, auto);
     }
 
-    .title {
-        font-size: 21px;
-    }
-
-    .large-image {
-        width: 100%;
-    }
-
-    .sinopsis {
-        font-size: 19px;
-    }
-
     .autor {
-        width: 95%;
-        height: auto;
+        @include medidas(90%, auto);
     }
 
-    .ita-24 {
-        font-size: 19px;
+    // Texto
+
+    h1, h1.title, h2, p, h3, .autor h3, .autor p, h4 {
+        font-size: map-get($font-size , base );
     }
 
-    .reg-36 {
-        font-size: 19px;
+    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4 {
+        font-size: map-get($font-size , m );
     }
 
-    .ita-36 {
-        font-size: 19px;
+    .capitulos-grid .capitulo {
+        font-size: map-get($font-size, 2xs );
     }
 
-    .ita-32 {
-        font-size: 19px;
-    }
+    // Imagen del Form
 
-    .video {
-        box-shadow: 0px 13px 23px #000000;
-    }
-
-    footer {
-        font-size: 19px;
-    }
-
-    .reg-40 {
-        font-size: 19px;
-    }
-
-    .lig-40 {
-        font-size: 20px;
-    }
-
-    .ita-40 {
-        font-size: 20px;
-    }
-
-    .grid-capitulos {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 3%;
-    }
-
-    .capitulo {
-        font-size: 19px;
-    }
-
-    .cap-cover {
-        box-shadow: 0px 4px 9px #000000;
-    }
-
-    .music-youtube {
-        width: 80vw;
-        height: 30vh;
-    }
-
-    .textbox {
-        font-size: 19px;
-    }
-
-    .textarea {
-        font-size: 19px;
-    }
-
-    .send-button {
-        width: 100px;
-        height: 40px;
-        font-size: 19px;
+    .form img {
+        @include medidas(100%, auto);
     }
 }
 
 @media (max-width: 450px) {
+
+    // Navbar
     .brand-logo {
-        width: 80px;
-        height: auto;
+        @include medidas(90px, auto);
     }
 
     .icon {
-        width: 30px;
-        height: auto;
+        @include medidas(30px, auto);
     }
 
     ul.navbar-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none;
-        text-decoration: none;
-        gap: 2px;
+        @include flex-center();
     }
+
+    // Index
 
     .review-star {
-        width: 40%;
-        height: auto;
-    }
-
-    .title {
-        font-size: 13px;
-    }
-
-    .large-image {
-        width: 80%;
-    }
-
-    .sinopsis {
-        font-size: 12px;
+        @include medidas(25%, auto);
     }
 
     .autor {
-        width: 95%;
-        height: auto;
+        @include medidas(90%, auto);
     }
 
-    .ita-24 {
-        font-size: 13px;
+    // Texto
+
+    a.nav-link, h1, h1.title, h2, p, h3, .autor h3, .autor p, h4 {
+        font-size: map-get($font-size, xs );
     }
 
-    .reg-36 {
-        font-size: 13px;
+    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4 {
+        font-size: map-get($font-size , 3xs );
     }
 
-    .ita-36 {
-        font-size: 13px;
+    .capitulos-grid .capitulo {
+        font-size: map-get($font-size , 4xs );
     }
 
-    .ita-32 {
-        font-size: 13px;
-    }
+    // Grid Capitulos y Musica
 
-    .video {
-        box-shadow: 0px 9px 14px #000000;
-    }
-
-    footer {
-        font-size: 13px;
-    }
-
-    .reg-40 {
-        font-size: 13px;
-    }
-
-    .lig-40 {
-        font-size: 14px;
-    }
-
-    .ita-40 {
-        font-size: 14px;
-    }
-
-    .grid-capitulos {
+    .capitulos-grid, .music-grid {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: space-around;
@@ -194,30 +109,13 @@
         padding: 3%;
     }
 
-    .capitulo {
-        font-size: 13px;
+    // Estructura del Form e Imagen
+
+    .form {
+        @include medidas(80%, auto);
     }
 
-    .cap-cover {
-        box-shadow: 0px 3px 8px #000000;
-    }
-
-    .music-youtube {
-        width: 80vw;
-        height: 20vh;
-    }
-
-    .textbox {
-        font-size: 13px;
-    }
-
-    .textarea {
-        font-size: 13px;
-    }
-
-    .send-button {
-        width: 100px;
-        height: 40px;
-        font-size: 13px;
+    .form img {
+        @include medidas(100%, auto);
     }
 }

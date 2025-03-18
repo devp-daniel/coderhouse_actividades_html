@@ -23,23 +23,26 @@
     text-align: center;
 
     h2 {
-        @include fontStyle(34px, normal, normal);
+        font-size: map-get($font-size , 6xl);
+        @include fontStyle(normal, normal);
         color: $secundario;   
     }
 
     p {
-        @include fontStyle(30px, normal, italic);
+        font-size: map-get($font-size , 4xl);
+        @include fontStyle(normal, italic);
         color: $primario;
     }
 
     h3 {
-        @include fontStyle(30px, normal, normal);
+        @extend p;
+        @include fontStyle(normal, normal);
         color: $terciario;
     }
 
     h4 {
         @extend p;
-        font-size: 22px;
+        font-size: map-get($font-size , xl);
     }
 
     .music-video {

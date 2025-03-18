@@ -10,7 +10,8 @@ section {
 // Index
 
 .title {
-    @include fontStyle(36px, lighter, italic);
+    font-size: map-get($font-size , 7xl);
+    @include fontStyle(lighter, italic);
     color: $secundario;
     text-align: start;
     margin-left: 1%;
@@ -25,7 +26,8 @@ section {
 }
 
 .sinopsis {
-    @include fontStyle(28px, lighter, normal);
+    font-size: map-get($font-size , 3xl);
+    @include fontStyle(lighter, normal);
     color: $terciario;   
     p {
         color: $secundario;
@@ -47,19 +49,22 @@ section {
     }
 
     h3 {
-        @include fontStyle(36px, normal, normal);
+        font-size: map-get($font-size , 7xl);
+        @include fontStyle(normal, normal);
         text-align: center;
     }
     
     p {
-        @include fontStyle(36px, normal, italic);
+        font-size: map-get($font-size , 7xl);
+        @include fontStyle(normal, italic);
         color: $secundario;
         text-align: center;
     }
 }
 
 h4 {
-    @include fontStyle(32px, normal, italic);
+    font-size: map-get($font-size , 5xl);
+    @include fontStyle(normal, italic);
     color: $secundario;
     margin: 2% 0;
 }
@@ -88,7 +93,8 @@ h4 {
 
     
     input, textarea, button {
-        @include fontStyle(18px, normal, italic);
+        font-size: map-get($font-size , s); 
+        @include fontStyle(normal, italic);
         @include medidas(100%, none);
         margin: 8px 0;
         padding: 12px;

@@ -33,7 +33,8 @@
     .capitulo {
         display: flex;
         flex-direction: column;
-        @include fontStyle(20px, normal, normal);
+        font-size: map-get($font-size , base);
+        @include fontStyle(normal, normal);
         color: $secundario;
     }
 
@@ -83,7 +84,8 @@
     }
 
     .breve-descripcion {
-        @include fontStyle(20px, normal, italic);
+        font-size: map-get($font-size, base );
+        @include fontStyle(normal, italic);
         color: $secundario;
         background: $background-descripcion;
         margin: 0 0 2.5em 0;

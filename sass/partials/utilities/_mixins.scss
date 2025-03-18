@@ -30,8 +30,7 @@
 
 // Letra
 
-@mixin fontStyle ($size, $weight, $style) {
-  font-size: $size;
+@mixin fontStyle ($weight, $style) {
   font-weight: $weight;
   font-style: $style;
 }

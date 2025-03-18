@@ -1,6 +1,6 @@
 footer {
     background: $footer-color;
-    font-size: 24px;
+    font-size: map-get($font-size, 2xl);
     text-align: center;
     padding: 1%;
     margin-top: 2em;

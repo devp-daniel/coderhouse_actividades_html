@@ -17,5 +17,6 @@
 
 a.nav-link {
     color: $primario;
-    @include fontStyle(24px, bold, normal);
+    font-size: map-get($font-size, 2xl);
+    @include fontStyle(bold, normal);
 }
