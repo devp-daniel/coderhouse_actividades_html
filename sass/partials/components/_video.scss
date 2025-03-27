@@ -59,3 +59,11 @@
         @include transform();
       }
 }
+
+// Carrusel de musica
+
+.carousel-inner {
+    border: $border-primario;
+    box-shadow: $shadow;
+    border-radius: 3%;
+}
