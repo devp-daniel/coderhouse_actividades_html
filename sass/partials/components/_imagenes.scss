@@ -60,6 +60,7 @@
 
 .carousel-container {
     @include flex-center();
+    padding-top: 20px;
     
     img.d-block.w-100 {
         @include medidas(100%, auto);
