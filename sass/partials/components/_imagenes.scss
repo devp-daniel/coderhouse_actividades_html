@@ -66,28 +66,34 @@
         box-shadow: $shadow;
     }
 
-    .carousel-caption {
-        top: 1%;
-        left: 1%;
-
-        h5 {
-            color: $primario;
-        }
-        
-        p {
-            color: $secundario;
-            font-style: italic;
-        }
-    }
-
     .breve-descripcion {
-        font-size: map-get($font-size, base );
-        @include fontStyle(normal, italic);
+        font-size: map-get($font-size, m );
         color: $secundario;
         background: $background-descripcion;
         margin: 0 0 2.5em 0;
         padding: 1em;
+
+        h2 {
+            font-size: map-get($font-size, 2xl );
+            color: $primario;
+            text-align: center
+        }
+
+        h3 {
+            @extend h2;
+            font-size: map-get($font-size, lg );
+            color: $terciario;
+        }
+
+        h4 {
+            @extend h3;
+            font-size: map-get($font-size, 2xl );
+        }
     }
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $terciario;
 }
 
 .arrow {

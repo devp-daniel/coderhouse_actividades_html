@@ -41,15 +41,15 @@
 
     // Texto
 
-    h1, h1.title, h2, p, h3, .autor h3, .autor p, h4 {
+    h1, h1.title, h2, p, h3, .autor h3, .autor p, h4, .carousel-container .breve-descripcion h2 {
         font-size: map-get($font-size , base );
     }
 
-    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4 {
+    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4, .carousel-container .breve-descripcion h3 {
         font-size: map-get($font-size , m );
     }
 
-    .capitulos-grid .capitulo {
+    .capitulos-grid .capitulo, .carousel-container .breve-descripcion p {
         font-size: map-get($font-size, 2xs );
     }
 
@@ -87,21 +87,21 @@
 
     // Texto
 
-    a.nav-link, h1, h1.title, h2, p, h3, .autor h3, .autor p, h4 {
+    a.nav-link, h1, h1.title, h2, p, h3, .autor h3, .autor p, h4, .carousel-container .breve-descripcion h2 {
         font-size: map-get($font-size, xs );
     }
 
-    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4 {
+    footer p, .music-grid h2, .music-grid p, .music-grid h3, .music-grid h4, .carousel-container .breve-descripcion h3 {
         font-size: map-get($font-size , 3xs );
     }
 
-    .capitulos-grid .capitulo {
+    .capitulos-grid .capitulo, .carousel-container .breve-descripcion p {
         font-size: map-get($font-size , 4xs );
     }
 
-    // Grid Capitulos y Musica
+    // Grid
 
-    .capitulos-grid, .music-grid {
+    .grid-container, .capitulos-grid, .music-grid {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: space-around;
