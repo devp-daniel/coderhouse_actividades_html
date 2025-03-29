@@ -7,4 +7,4 @@
   <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
 </h3>
 <h4>Deploy Github pages: https://devp-daniel.github.io/coderhouse_actividades_html/</h4>
-<h5>Server: https://devp-daniel.github.io/coderhouse_actividades_html/</h5>
+<h5>Vercel Server: https://coderhouse-actividades-html.vercel.app/</h5>
